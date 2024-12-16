@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+}
+
+header {
+    background: #4a90e2;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+header img {
+    width: 100px;
+}
+
+#toggle-mode {
+    margin-top: 1rem;
+    background: white;
+    color: #4a90e2;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+    margin: 1rem 0;
+    margin-top: 2rem;
+}
+
+p {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+h2 {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.grid-container :hover {
+    transform: scale(1.05);
+    transition: transform 0.5s;
+}
+
+
+section {
+    display: grid;
+    text-align: center;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+grid-item {
+    text-align: center;
+    padding: 1rem;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #4a90e2;
+    color: white;
+}
+
+body.dark-mode {
+    background: #121212;
+    color: #eee;
+}
+
+
+body.dark-mode header {
+    background: #333;
+}
+
+body.dark-mode section {
+    background: #1e1e1e;
+    border: 1px solid #444;
+}
+
+body.dark-mode footer {
+    background: #333;
+}
+
+
+body.dark-mode #toggle-mode {
+    background: #2e2b2b;
+    color: #4a90e2;
+}
